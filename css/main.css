@@ -45,7 +45,7 @@ nav li {
   font-size: large;
 }
 .col-1-1-2 {
-  width: 33,333333333%;
+  width: 33%;
   float: right;
   font-weight: bold;
   font-size: large;
@@ -57,4 +57,12 @@ nav li {
   font-size: large;
 }
 
+#bg{
+    margin: 60px auto;
+    text-align: center;
+}
+#bg img{
+    width: 200px;
+    cursor: pointer;
+}
 
