@@ -1,0 +1,31 @@
+{
+  "name": "otus_web",
+  "version": "1.0.0",
+  "description": "Данный репозиторий по веб курсу от компании OTUS",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swistov/otus_front.git"
+  },
+  "keywords": [],
+  "author": "Svistov Nikolai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swistov/otus_front/issues"
+  },
+  "homepage": "https://github.com/swistov/otus_front#readme",
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.2.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {}
+}

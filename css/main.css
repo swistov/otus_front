@@ -20,6 +20,7 @@
 nav {
   float: right;
   font: large menu;
+  margin: 25px 10px;
 }
 
 nav ul {
@@ -53,10 +54,10 @@ nav li {
 .col-1-2 {
   width: 35%;
   float: right;
-  font-weight: bold;
-  font-size: large;
-}
-
+  font-weight: bolcursesd;
+  font-size: largecurses;
+}curses
+curses
 #bg{
   margin: 60px auto;
   text-align: center;
@@ -66,3 +67,28 @@ nav li {
     cursor: pointer;
 }
 
+.good {
+  margin: 10px;
+}
+.goods .left-menu{
+  width: 15%;
+  float: left;
+}
+
+.goods .courses{
+  width: 85%;
+  float: right;
+}
+
+.goods .courses .course{
+  width: 25%;
+  float: left;
+}
+.goods .courses .course .card{
+  border: 2px solid #55c5e9;
+  padding: 5px;
+  width: 350px;
+  height: 250px;
+  float: left;
+  margin: 10px 10px 10px 10px;
+}
