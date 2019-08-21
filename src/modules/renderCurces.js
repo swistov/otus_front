@@ -11,8 +11,8 @@ export default function renderCurces(data) {
                         <div class="teacher" style="margin: 0px 10px 10px 0px">
                             <h7 class="teacher-info">Teacher: ${good.teacher}</h7>
                         </div>
-                        <button class="btn btn-primary" style="width:45%">О курсе</button>
-                        <button class="btn btn-primary" style="width:45%; float:right">Купить</button>
+                        <button class="btn btn-primary curse-info" style="width:45%">О курсе</button>
+                        <button class="btn btn-primary curse-by" style="width:45%; float:right">Купить</button>
                     </div>
                 </div>
         `;

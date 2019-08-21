@@ -9,12 +9,7 @@ function changeBg(img) {
     }
 }
 
-function some(){
-    console.log('123');
-}
-
 (async function () {
     const data = await getData();
     renderCurces(data);
 }());
-
