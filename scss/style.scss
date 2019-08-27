@@ -1,11 +1,3 @@
-// .main {
-//     background: aquamarine;
-// }
-
-.main-one {
-    background: white;
-}
-
 .main-menu {
     width: 100%;
     max-width: 100%;
@@ -17,12 +9,27 @@
 .logo {
     float: left;
     color: blue;
-
 }
 
 .cart {
     float: right;
-    margin: 0px 0px 0px 100px;
+    margin: 25px 0px 0px 100px;
+
+    &__cart-title {
+        display: none;
+    }
+
+    &__cart-wrapper {
+        display: none;
+    }
+
+    &__cart-total {
+        display: none;
+    }
+
+    &__cart-close {
+        display: none;
+    }
 }
 
 nav {

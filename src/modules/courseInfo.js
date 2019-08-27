@@ -6,6 +6,7 @@ export default function curseInfo() {
         const modal = document.createElement('div');
         const wrapper = document.createElement('div');
 
+        console.log(course);
 
         modal.className = 'wrapper';
         modal.innerHTML = `<h1>LOLOLOLOOLO</h1>`;
