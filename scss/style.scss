@@ -74,8 +74,8 @@ nav li {
 .col-1-2 {
     width: 35%;
     float: right;
-    font-weight: bolcursesd;
-    font-size: largecurses;
+    //font-weight: bolcursesd;
+    //font-size: largecurses;
 }
 
 curses curses #bg {
@@ -116,12 +116,12 @@ curses curses #bg {
     margin: 10px 10px 10px 10px;
 }
 
-.wrapper,
-.modal {
+.wrapper_custom,
+.modal_custom {
     display: none;
 }
 
-.wrapper {
+.wrapper_custom {
     position: fixed;
     top: 0;
     right: 0;
@@ -130,7 +130,7 @@ curses curses #bg {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal {
+.modal_custom {
     position: fixed;
     left: 50%;
     transform: translate(-50%);

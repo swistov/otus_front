@@ -15,7 +15,6 @@ export default function renderCurces(data) {
                         <button class="btn btn-primary course-by" style="width:45%; float:right">Купить</button>
                     </div>
                 </div>
-
         `;
         goodsWrapper.appendChild(card);
     });
