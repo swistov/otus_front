@@ -11,8 +11,8 @@ export default function renderCurces(data) {
                         <div class="teacher" style="margin: 0px 10px 10px 0px">
                             <h7 class="teacher-info">Teacher: ${good.teacher}</h7>
                         </div>
-                        <button class="btn btn-primary course-info" style="width:45%">О курсе</button>
-                        <button class="btn btn-primary course-by" style="width:45%; float:right">Купить</button>
+                        <button class="btn btn-primary course-info" style="width:45%" data-lesson-id="${good.id}">О курсе</button>
+                        <button class="btn btn-primary course-by" style="width:45%; float:right" data-lesson-id="${good.id}">Купить</button>
                     </div>
                 </div>
         `;

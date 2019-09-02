@@ -1,16 +1,14 @@
 export default function curseInfo() {
     const courses = document.querySelectorAll('.course');
-
     courses.forEach((course) => {
         const btn = course.querySelector('.course-info');
         const modal = document.createElement('div');
         const wrapper = document.createElement('div');
-
-        console.log(course);
+        const curseID = btn.getAttribute('data-lesson-id');
 
         wrapper.className = 'wrapper_custom';
         modal.className = 'modal_custom';
-        modal.innerHTML = `<h1>LOLOLOLOOLO</h1>`;
+        modal.innerHTML = `<h1>Text</h1>`;
 
         btn.addEventListener('click', () => {
             if (!modal.style.display && !wrapper.style.display) {
@@ -18,6 +16,7 @@ export default function curseInfo() {
                 wrapper.style.display = 'block';
                 document.body.appendChild(wrapper);
                 document.body.appendChild(modal);
+                console.log(curseID);
             } else {
                 modal.style.display = '';
                 wrapper.style.display = '';
