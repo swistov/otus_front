@@ -18,6 +18,14 @@ module.exports = {
       }
     ]
   },
+  devtool: 'inline-source-map',
+    devServer: {
+        port: '3000',
+        host: '0.0.0.0',
+        proxy: {
+            '/api/v1.0': 'http://localhost:3000'
+        }
+    },
   plugins: [ 
 
     new ExtractTextPlugin(

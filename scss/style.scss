@@ -74,11 +74,9 @@ nav li {
 .col-1-2 {
     width: 35%;
     float: right;
-    //font-weight: bolcursesd;
-    //font-size: largecurses;
 }
 
-curses curses #bg {
+.curses #bg {
     margin: 60px auto;
     text-align: center;
 }
@@ -114,6 +112,35 @@ curses curses #bg {
     height: 250px;
     float: left;
     margin: 10px 10px 10px 10px;
+}
+.form-login {
+    margin: 0 0 0 750px;
+
+    &__name {
+        margin-left: 50px;
+    }
+
+    &__username {
+        margin: 10px 0px 10px;
+    }
+
+    &__password {
+    }
+
+    &__sing-in {
+        margin: 25px auto;
+        &__btn {
+
+        }
+    }
+
+    &__forgot {
+    }
+
+    &__label {
+        margin-left: -200px;
+        color: darkgrey;
+    }
 }
 
 .wrapper_custom,
