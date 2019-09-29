@@ -1,7 +1,11 @@
+'use strict';
+
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 module.exports = {
+// <<<<<<< HEAD
   entry: {
     main: './src/index.js',
     style: './scss/style.scss'
@@ -27,12 +31,28 @@ module.exports = {
         }
     },
   plugins: [ 
+// =======
+    context: path.resolve(__dirname, 'src'),
+    entry: {
+        main: './index.js',
+    },
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: '[name].js'
+    },
+// >>>>>>> 9dd00bc0ce18f517cec598f8884536f9f6e240f8
 
-    new ExtractTextPlugin(
-      {filename: 'style.css', disable: false, allChunks: true }
-    ),
-    new MiniCssExtractPlugin({
-      filename: 'style.css',
-    }),
-  ]
+    module: {
+        rules: [{
+            test: /\.scss$/,
+            use: ExtractTextPlugin.extract({
+                fallback: 'style-loader',
+                use: ['css-loader', 'sass-loader']
+            })
+        }]
+    },
+
+    plugins: [
+        new ExtractTextPlugin('style.css')
+    ]
 };
