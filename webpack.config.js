@@ -2,14 +2,14 @@
 
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+// const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    context: path.resolve(__dirname, 'src'),
     entry: {
-        main: './index.js',
+        main: './src/index.js',
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.join(__dirname, 'dist'),
         filename: '[name].js'
     },
     module: {
@@ -19,6 +19,13 @@ module.exports = {
                 fallback: 'style-loader',
                 use: ['css-loader', 'sass-loader']
             })
+        },
+        {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+                loader: "babel-loader"
+            },
         }]
     },
     devtool: 'inline-source-map',
@@ -30,6 +37,9 @@ module.exports = {
         }
     },
     plugins: [
-        new ExtractTextPlugin('style.css')
+        new ExtractTextPlugin('style.css'),
+        // new HtmlWebpackPlugin({
+        //     template: "./index.html"
+        // })
     ]
 };
