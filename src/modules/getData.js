@@ -1,6 +1,5 @@
 export default function getData() {
     const goodsWrapper = document.querySelector('.goods');
-    console.log(goodsWrapper);
     return fetch('../db/db.json')
         .then((response) => {
             if (response.ok) {
