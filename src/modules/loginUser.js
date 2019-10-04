@@ -42,7 +42,7 @@ export default function loginUser() {
             'password': passwordInput.value
         };
 
-        sendPost('http://localhost:8000', params);
+        sendPost('http://localhost:8000/api/v1.0/', params);
 
     });
 }
